@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video to Cartoon Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        input, button {
+            margin: 10px;
+            padding: 10px;
+        }
+        video, canvas {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Video to Cartoon Converter</h1>
+        <input type="file" id="fileInput" accept="video/*">
+        <video id="video" controls></video>
+        <canvas id="canvas"></canvas>
+        <button id="convertBtn">Convert to Cartoon</button>
+        <button id="downloadBtn" style="display: none;">Download Cartoon Video</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
